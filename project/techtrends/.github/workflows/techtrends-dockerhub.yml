@@ -1,4 +1,4 @@
-name: "TechTrends - Package with Docker Test"
+name: "TechTrends - Package with Docker"
 
 on:
   push:
