@@ -1,0 +1,21 @@
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+node_modules/
+.env
+.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+
+# Add the following lines to your .gitignore file
+.idea/
+.vagrant/
+.venv/
+database.db
+get-pip.py

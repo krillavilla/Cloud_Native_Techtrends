@@ -1,0 +1,19 @@
+# Build the Docker image
+sudo docker build -t techtrends .
+
+# Run the Docker container
+sudo docker run -d -p 7111:3111 techtrends
+
+# Retrieve logs from the running container
+sudo docker logs 7b32dbcea2d3
+
+# Example logs
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+
