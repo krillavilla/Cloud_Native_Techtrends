@@ -2,8 +2,8 @@ name: TechTrends - Package with Docker
 
 on:
   push:
-    branches: [ "main" ]
-
+    branches:
+      - main
 
 jobs:
   build:
@@ -18,9 +18,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        token: ${{ secrets.DOCKERHUB_TOKEN }}
-
-
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
