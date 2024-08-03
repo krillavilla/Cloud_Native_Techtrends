@@ -4,13 +4,9 @@ on:
   push:
     branches:
         - main
-        - develop
-        - feature/*
-        - hotfix/*
-        - release/*
-        - bugfix/*
-        - support/*
-
+  pull_request:
+    branches:
+        - main
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -28,7 +24,7 @@ jobs:
           dockerfile: ./project/techtrends/Dockerfile
           registry: docker.io
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
 
 
