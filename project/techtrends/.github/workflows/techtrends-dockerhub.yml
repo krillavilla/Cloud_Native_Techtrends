@@ -23,6 +23,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ./project/techtrends/Dockerfile  # Update this path if your Dockerfile is located elsewhere
+        file: project/techtrends/Dockerfile
         push: true
         tags: krillavilla/techtrends:latest
