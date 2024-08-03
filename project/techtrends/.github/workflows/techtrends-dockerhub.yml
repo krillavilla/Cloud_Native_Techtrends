@@ -2,7 +2,14 @@ name: TechTrends - Package with Docker
 
 on:
   push:
-    branches: [main]
+    branches:
+        - main
+        - develop
+        - feature/*
+        - hotfix/*
+        - release/*
+        - bugfix/*
+        - support/*
 
 jobs:
   build-and-push:
