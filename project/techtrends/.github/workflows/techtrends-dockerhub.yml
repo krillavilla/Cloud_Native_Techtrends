@@ -1,4 +1,4 @@
-name: TechTrends - Package with Docker -
+name: TechTrends - Package with Docker
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
-        file: ./Dockerfile
+        context: ./project/techtrends
+        file: ./project/techtrends/Dockerfile
         push: true
         tags: krillavilla/techtrends:latest
